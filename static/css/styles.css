@@ -1,1 +1,153 @@
+*{
+  background-color: #000000;
+
+}
+body {
+    padding: 0 !important;
+    margin: 0;
+    background-color: #000000 !important ;
+    font-family: 'Arial';
+    box-sizing: border-box;
+}   
+
+.qff_Wrapper {
+  background-color: #e2e202;
+  padding-top: 1%; /* Adjust padding using percentage for responsiveness */
+  min-height: calc(100vh - 240px);
+}
+
+.LeftImage img,
+.RightImage img {
+    width: 100%;
+}
+
+.splitScreenWrapper {
+    display: flex;
+}
+
+.LeftImage,
+.RightImage {
+    width: 50%;
+}
+
+/* Change the background color and font color of topnav links on hover */
+.topnav a:hover {
+    color: #D5D5D5;
+    background: #000;
+    text-decoration: none;
+}
+
+/* Style the link inside the topnav */
+.topnav a {
+    font-size: 5.989583333333333vw;
+    letter-spacing: -0.359375vw;
+    display: block;
+    font-weight: 900;
+    color: #000;
+    font-family: 'tex_gyre_herosbold';
+    background: #D5D5DD;
+    text-align: center;
+    line-height: 0.7;
+    padding: 2vw 0;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+.footer-basic {
+    padding: 4%; /* Adjust padding using percentage for responsiveness */
+    background-color: #000000f2;
+    color: #D5D5DD; /* Yellow text color */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 1vw; /* Adjust font size using viewport units for responsiveness */
+    letter-spacing: 0.5vw; /* Adjust letter spacing using viewport units for responsiveness */
+  }
+  
+  .footer-basic ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .footer-basic li {
+    display: inline-block;
+    margin-right: 1%; /* Adjust margin using percentage for responsiveness */
+  }
+  
+  .footer-basic li:last-child {
+    margin-right: 0; /* Remove margin from last item */
+  }
+  
+  .footer-basic a {
+    color: #D5D5DD; /* Yellow link color */
+    text-decoration: none;
+  }
+  
+  .footer-basic a:hover {
+    color: #545454; /* Light gray link color on hover */
+    text-decoration: none;
+  }
+  
+  .footer-basic .social-icon a i {
+    font-size: 2vw; /* Adjust font size using viewport units for responsiveness */
+  }
+
+  a:hover {
+    opacity: 1;
+    transition: all 0.6s ease;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .qff_Wrapper {
+        min-height: calc(100vh - 126px) !important;
+    }
+  }
+  
+  @media only screen and (max-width:1023px) {
+    .splitScreenWrapper {
+        display: block;
+    }
+
+    .LeftImage,
+    .RightImage {
+        width: 100%;
+    }
+
+    .topnav a {
+        font-size: 13.953488372093023vw;
+        letter-spacing: -0.8372093023255814vw;
+        line-height: 1.2;
+        padding-top: 5vw;
+    }
+
+    .footer-basic {
+        font-size: 5.5vw; /* Adjust font size for smaller screens */
+        padding: 12vw 3vw; /* Adjust padding for smaller screens */
+        padding-bottom: 45vw;
+        letter-spacing: 2.3vw;
+        line-height: 4;
+      }
+    
+      .footer-basic .social-icon a i {
+        font-size: 15vw; /* Adjust font size for smaller screens */
+      }
+    
+}
+
+@media only screen and (max-width: 640px)
+{
+  /* Footer adjustments */
+    .footer-basic {
+        font-size: 5.5vw; /* Adjust font size for smaller screens */
+        padding: 12vw 3vw; /* Adjust padding for smaller screens */
+        padding-bottom: 45vw;
+        letter-spacing: 2.3vw;
+        line-height: 4;
+      }
+    
+      .footer-basic .social-icon a i {
+        font-size: 15vw; /* Adjust font size for smaller screens */
+      }
+    
+    }
 
