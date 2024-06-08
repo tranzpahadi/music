@@ -20,10 +20,11 @@
 
 .imageContainer .overlay {
   position: absolute;
+  margin-top: -4vw;
   top: 0;
   left: 0;
   right: 0; /* To stretch across the full width */
-  padding: 20px; /* More padding for better spacing */
+  padding: 10px; /* More padding for better spacing */
   background-color: transparent; /* Subtle transparent background */
   opacity: 0;
   transition: opacity 0.5s ease, transform 0.5s ease; /* Fade in with slight transform */
@@ -183,6 +184,11 @@ a:hover {
   .footer-basic .social-icon a i {
       font-size: 9.2vw;
   }
+
+  .imageContainer .overlay {
+    font-size: 20vw;
+    margin-top: -10vw;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -196,5 +202,20 @@ a:hover {
 
   .footer-basic .social-icon a i {
       font-size: 9.2vw;
+  }
+
+  .imageContainer .overlay {
+    font-size: 20vw;
+    margin-top: -10vw;
+    
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .imageContainer .overlay {
+    font-size: 20vw;
+    margin-top: -10vw;
+    
   }
 }
