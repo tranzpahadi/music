@@ -186,8 +186,8 @@ a:hover {
   }
 
   .imageContainer .overlay {
-    font-size: 20vw;
-    margin-top: -10vw;
+    font-size: 18vw;
+    margin-top: -8vw;
   }
 }
 
@@ -205,8 +205,8 @@ a:hover {
   }
 
   .imageContainer .overlay {
-    font-size: 20vw;
-    margin-top: -10vw;
+    font-size: 16vw;
+    margin-top: -6vw;
     
   }
 }
@@ -214,8 +214,8 @@ a:hover {
 @media only screen and (max-width: 400px) {
   
   .imageContainer .overlay {
-    font-size: 20vw;
-    margin-top: -10vw;
+    font-size: 15vw;
+    margin-top: -5vw;
     
   }
 }
