@@ -1,0 +1,16 @@
+/* Paste your CSS code here */
+* {
+    margin: 0;
+      padding: 0;
+  }
+  
+  #pl{
+    position: fixed;
+    width: 100%;
+  height: 100vh;
+    background: #fff
+      url('../preloader/icons8-music-record.gif')
+      no-repeat center;
+      z-index: 99999;
+  } 
+  

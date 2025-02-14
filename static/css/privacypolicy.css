@@ -1,0 +1,327 @@
+:root {
+    --primary-color: #676767;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color:#e7e7e7 ;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #e7e7e7;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 38px;
+    line-height: 1.2;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   color: var(--primary-color);
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 34px;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+
+.showcase {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    position: relative; /* Add position relative to showcase */
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure video is behind content */
+}
+
+.content {
+    z-index: 1; /* Ensure content stays on top of the video */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1rem;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    border: solid #fff 1px;
+    margin-top: 25px;
+    opacity: 0.7;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+#privacypolicy{
+    padding: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+
+#privacypolicy p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+    color: var(--primary-color);
+}
+
+#privacypolicy h1 {
+    color: var(--primary-color);
+}
+
+#privacypolicy h2 {
+    margin: 30px 0;
+}
+
+.social a {
+    margin: 0 5px;
+}
+
+#email {
+    font-size: 1rem; /* Default font size */
+}
+
+.social i {
+    font-size: 24px; /* Default icon size */
+}
+
+.footer-basic {
+    background-color: #e7e7e7; /* Background color of the footer */
+    color: #333; /* Text color of the footer */
+    padding-bottom: 20px; /* Padding of the footer */
+    font-size: 0.5rem;
+    text-align: center; /* Center-align text */
+    position: relative; /* Add position relative to footer */
+    bottom: 0; /* Stick to the bottom of the viewport */
+    width: 100%; /* Full width */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1600px) {
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .btn {
+        padding: 8px 26px;
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+    #privacypolicy {
+        padding: 38px;
+        padding-bottom: 28px;
+    }
+    #privacypolicy p {
+        font-size: 18px;
+    }
+    #email {
+        font-size: 18px;
+    }
+    .social i {
+        font-size: 22px; /* Adjust icon size for smaller screens */
+    }
+    .footer-basic {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    .btn {
+        padding: 8px 24px;
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+    #privacypolicy {
+        padding: 34px;
+        padding-bottom: 24px;
+    }
+    #privacypolicy p {
+        font-size: 16px;
+    }
+    #email {
+        font-size: 16px;
+    }
+    .social i {
+        font-size: 20px; /* Adjust icon size for smaller screens */
+    }
+    .footer-basic {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .btn {
+        padding: 8px 24px;
+        font-size: 0.7rem; /* Adjust font size for smaller screens */
+    }
+    #privacypolicy {
+        padding: 30px;
+        padding-bottom: 20px;
+    }
+    #privacypolicy p {
+        font-size: 14px;
+    }
+    #email {
+        font-size: 14px;
+    }
+    .social i {
+        font-size: 18px; /* Adjust icon size for smaller screens */
+    }
+    .footer-basic {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 30px;
+    } 
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .btn {
+        padding: 6px 20px;
+        font-size: 0.6rem; /* Adjust font size for smaller screens */
+    }
+    #privacypolicy {
+        padding: 26px;
+        padding-bottom: 16px;
+    }
+    #privacypolicy p {
+        font-size: 12px;
+    }
+    #email {
+        font-size: 12px;
+    }
+    .social i {
+        font-size: 16px; /* Adjust icon size for smaller screens */
+    }
+    .footer-basic {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 6px 18px;
+        font-size: 0.5rem; /* Adjust font size for smaller screens */
+    }
+    #privacypolicy{
+        padding: 22px;
+        padding-bottom: 12px;
+    }
+    #privacypolicy p {
+        font-size: 10px;
+    }
+    #email {
+        font-size: 10px;
+    }
+    .social i {
+        font-size: 14px; /* Adjust icon size for smaller screens */
+    }
+    .footer-basic {
+        font-size: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 6px 16px;
+        font-size: 0.4rem; /* Adjust font size for smaller screens */
+    }
+    #privacypolicy {
+        padding: 18px;
+        padding-bottom: 8px;
+    }
+    #privacypolicy p {
+        font-size: 8px;
+    }
+    #email {
+        font-size: 8px;
+    }
+    .social i {
+        font-size: 14px; /* Adjust icon size for smaller screens */
+    }
+    .footer-basic {
+        font-size: 0.4rem;
+    }
+}
