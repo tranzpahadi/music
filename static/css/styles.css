@@ -1,0 +1,233 @@
+/* CSS for Image Hover Effect */
+.imageContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  border-radius: 0px; /* Optional: To make the edges smooth */
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease, filter 0.5s ease; /* Adding filter transition */
+}
+
+.imageContainer:hover img {
+  transform: scale(1.1); /* Enhanced zoom effect */
+  filter: brightness(0.7); /* Darken the image slightly on hover */
+}
+
+.imageContainer .overlay {
+  position: absolute;
+  margin-top: -4vw;
+  top: 0;
+  left: 0;
+  right: 0; /* To stretch across the full width */
+  padding: 10px; /* More padding for better spacing */
+  background-color: transparent; /* Subtle transparent background */
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Fade in with slight transform */
+  color: white;
+  font-size: 10vw; /* Larger text size */
+  font-weight: bold; /* Bold text for better visibility */
+  transform: translateY(-20px); /* Slightly move up */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; /* Align text to the top-left */
+  z-index: 1; /* Ensure the text is above the image */
+}
+
+.imageContainer:hover .overlay {
+  opacity: 1;
+  transform: translateY(0); /* Move text to original position on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .overlay {
+      font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .overlay {
+      font-size: 6vw;
+  }
+}
+
+/* Your Existing CSS */
+* {
+  background-color: #000000;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0;
+  background-color: #000000 !important;
+  font-family: 'Arial';
+  box-sizing: border-box;
+}
+
+.LeftImage img,
+.RightImage img {
+  width: 100%;
+}
+
+.splitScreenWrapper {
+  display: flex;
+}
+
+.LeftImage,
+.RightImage {
+  width: 50%;
+}
+
+/* Change the background color and font color of topnav links on hover */
+.topnav a:hover {
+  color: #D5D5D5;
+  background: #000;
+  text-decoration: none;
+}
+
+/* Style the link inside the topnav */
+.topnav a {
+  font-size: 5.989583333333333vw;
+  letter-spacing: -0.359375vw;
+  display: block;
+  font-weight: 900;
+  color: #000;
+  font-family: 'tex_gyre_herosbold';
+  background: #D5D5DD;
+  text-align: center;
+  line-height: 0.7;
+  padding: 2vw 0;
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.footer-basic {
+  padding: 4%;
+  background-color: #000000f2;
+  color: #D5D5DD;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  font-size: 1vw;
+  letter-spacing: 0.5vw;
+}
+
+.footer-basic ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-basic li {
+  display: inline-block;
+  margin-right: 1%;
+}
+
+.footer-basic li:last-child {
+  margin-right: 0;
+}
+
+.footer-basic a {
+  color: #D5D5DD;
+  text-decoration: none;
+}
+
+.footer-basic a:hover {
+  color: #545454;
+  text-decoration: none;
+}
+
+.footer-basic .social-icon a i {
+  font-size: 2vw;
+}
+
+a:hover {
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .qff_Wrapper {
+      min-height: calc(100vh - 126px) !important;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .splitScreenWrapper {
+      display: block;
+  }
+
+  .LeftImage,
+  .RightImage {
+      width: 100%;
+  }
+
+  .topnav a {
+      font-size: 13.953488372093023vw;
+      letter-spacing: -0.8372093023255814vw;
+      line-height: 1.2;
+      padding-top: 5vw;
+  }
+
+  .footer-basic {
+      font-size: 5.5vw;
+      padding: 12vw 3vw;
+      padding-bottom: 45vw;
+      letter-spacing: 2.3vw;
+      line-height: 4;
+  }
+
+  .footer-basic .social-icon a i {
+      font-size: 9.2vw;
+  }
+
+  .imageContainer .overlay {
+    font-size: 18vw;
+    margin-top: -8vw;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .footer-basic {
+      font-size: 5.5vw;
+      padding: 12vw 3vw;
+      padding-bottom: 45vw;
+      letter-spacing: 2.3vw;
+      line-height: 4;
+  }
+
+  .footer-basic .social-icon a i {
+      font-size: 9.2vw;
+  }
+
+  .imageContainer .overlay {
+    font-size: 16vw;
+    margin-top: -6vw;
+    
+  }
+  .topnav a {
+    font-size: 12.953488372093023vw;
+    letter-spacing: -0.8372093023255814vw;
+    line-height: 1.2;
+    padding-top: 5vw;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .imageContainer .overlay {
+    font-size: 15vw;
+    margin-top: -5vw;
+    
+  }
+  .topnav a {
+    font-size: 10.953488372093023vw;
+    letter-spacing: -0.8372093023255814vw;
+    line-height: 1.2;
+    padding-top: 5vw;
+}
+}
