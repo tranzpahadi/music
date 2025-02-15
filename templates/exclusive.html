@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <!-- Link to compiled SCSS file (styles.css) -->
+    <link rel="stylesheet" href="../static/css/exclusive.css">
+    <link rel="stylesheet" href="../static/css/preloader.css">
+</head>
+<body onload="myfunction()">
+    <div id="pl" ></div>
+
+    <section class="hero">
+        <video id="background-video" autoplay muted loop>
+            <source src="../static/music/Exclusive.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1 class="hero__title">
+            <span class="hero__title-text">
+                EXCLUSIVE
+            </span>
+            <span class="hero__title-bg hero__title-bg--front" aria-hidden="true">
+                EXCLUSIVE
+            </span>
+            <span class="hero__title-bg hero__title-bg--back" aria-hidden="true">
+                EXCLUSIVE
+            </span>
+        </h1>
+    </section>
+    <section id="about">
+        <h1 id="dynamicText"></h1>
+        <h4>BUY<a id="dynamicLink" target="_blank" class="mp3-link">WAV,STEMS,MP3</a> FILE ONLY AT</h4>
+
+    <h3>99$</h3>
+    
+    <h2>Used for Music Recording</h2>
+    <p></p>
+
+    <h2>Distribute up to UNLIMITED copies</h2>
+    <p></p>
+    
+    <h2>UNLIMITED Online Audio Streams</h2>
+    <p></p>
+
+    <h2>UNLIMITED Music Video</h2>
+    <p></p>
+
+    <h2>For Profit Live Performances</h2>
+    <p></p>
+
+    <h2>Radio Broadcasting rights</h2>
+    <p>(UNLIMITED Stations)</p>
+
+    <h2>Contact Us</h2>
+    <h2>For buying this beat DM me in my mail box</h2>
+    <p>And if you have any questions or would like to get in touch, please contact us at:</p>
+    <h2 id="email">tranzpahadi@gmail.com</h2>
+        </section>
+
+
+    <!-- Add GSAP and ScrollTrigger libraries at the end of the body -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Link to your custom JavaScript file (script.js) -->
+    <script src="../static/js/exclusive.js"></script>
+    <script src="../static/js/same.js"></script>
+    <script src="../static/js/preloader.js"></script>
+    <script src="../static/js/workmp3.js"></script>
+</body>
+</html>
